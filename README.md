@@ -1,4 +1,5 @@
 # Consoledot Testing Proxy
+[![Static Badge](https://img.shields.io/badge/quay.io-container-badge?labelColor=red&color=black)](https://quay.io/repository/dvagner/consoledot-testing-proxy)
 
 Configurable container proxy for UI/E2E testing, implemented using the
 [caddy](https://caddyserver.com/) proxy extended with a custom header transforming
@@ -22,7 +23,7 @@ sudo podman run -d
   -e HTTPS_PROXY=$RH_STAGE_PROXY_URL
   -v "$(pwd)/config:/config:ro,Z"
   --network=host
-  consoledot-testing-proxy consoledot-testing-proxy
+  consoledot-testing-proxy quay.io/dvagner/consoledot-testing-proxy
 ```
 
 ## Setup
